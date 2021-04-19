@@ -1,0 +1,25 @@
+header,footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+}
+
+
+
+ul li {
+    display: inline;
+    list-style: none;
+    margin-left: 40px;    
+}
+
+p {
+    color: black;
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+}
+
+
