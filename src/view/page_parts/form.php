@@ -6,23 +6,20 @@
         <label for="surname">Add surname</label>
         <input type="text" name="model_surname" id="surname">
 
-        <!-- <label for="email">Add email</label>
-        <input type="text" name="model_email" id="email"> -->
+        <label for="email">Add email</label>
+        <input type="text" name="model_email" id="email">
 
         <label for="birthday">Add date of birth</label>
         <input type="date" name="model_birthday" id="birthday">
 
-        <label for="age">Add date of birth</label>
-        <input type="number" name="age" id="age">
-
-        <!-- <input type="radio" name="sex" id="male" value="male">male
-        <input type="radio" name="sex" id="female" value="female">female -->
+        <input type="radio" name="model_gender" id="male" value="man">male
+        <input type="radio" name="model_gender" id="female" value="woman">female
 
         <label for="height">Add Height</label>
-        <input type="number" step="1" min="100" max="250" id="height" name="height">
+        <input type="number" step="1" min="100" max="250" id="height" name="model_height">
     
         <label for="weight">Add Weight</label>
-        <input type="number" step="1" min="30" max="250" id="weight" name="weight">
+        <input type="number" step="1" min="30" max="250" id="weight" name="model_weight">
 
         <input type="submit" value="add model">
     </form>
