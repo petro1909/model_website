@@ -1,0 +1,12 @@
+.model_element{
+    display: flex;
+    justify-content: space-around;
+}
+
+/* section.model_info {
+    float: left;
+}
+
+section.model_parametrs {
+    float: right;
+} */
