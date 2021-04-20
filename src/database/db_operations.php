@@ -26,7 +26,22 @@
     
     }
     
-    function addModel($query) {
+    function addModel() {
+
+        $name = $_POST['model_name'];
+        $surname = $_POST['model_surname'];
+        $email = $_POST['model_email'];
+        $birthday = $_POST['model_birthday'];
+        
+        $age = getAge($birthday);
+        $gender = $_POST['model_gender'];
+        $height = $_POST['model_height'];
+        $weight = $_POST['model_weight'];
+        
+        $query = "INSERT INTO models VALUES(NULL,
+            '$name','$surname','$email','$birthday','$age','$gender','$height','$weight')";
+
+
         getResult($query);
 
     }
@@ -38,19 +53,32 @@
     function updateModel() {
 
     }
-
     if(isset($_POST['model_name'])) {
-        $name = $_POST['model_name'];
-        $query = "INSERT INTO models VALUES(7,'$_POST[model_name]','dsads','dsadsa@mail.ru','2019-04-04',34,'man',143,56)";
-         addModel($query);
-    } else{
+         addModel();
+         header('Location: ../view/page/list.php');
+        exit;
+    } else {
         getAllModels("SELECT * FROM models");
     }
 
     function getResult($query) {
         global $link;
-        $result = mysqli_query($link,$query) or die("Ошибка".mysqli_error($link));
+        $result = mysqli_query($link,$query) or die("Ошибка ".mysqli_error($link));
         return $result;
     };
+
+
+    function getAge($birthday) {
+
+        $date1 = new DateTime($birthday);
+        $currentdate = date("Y-m-d");
+        $date2 = new DateTime($currentdate);
+
+        $diff = $date2->diff($date1);
+        $age = $diff->format('%Y');
+        return $age;
+    }
+
+
     mysqli_close($link);
 ?>
