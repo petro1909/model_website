@@ -1,5 +1,5 @@
 <section>
-    <form name="become_a_model" action="../../database/db_operations.php" method="POST">
+    <form name="become_a_model" action="../../database/db_models_operations.php" method="POST">
         <label for="name">Add name</label>
         <input type="text" name="model_name" id="name">
 

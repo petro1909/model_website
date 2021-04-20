@@ -3,9 +3,11 @@
     <body>
         <main>    
             <p class="model_element">
-                <?php require "../../database/db_operations.php" ?>
+                <?php require "../../database/db_models_operations.php" ?>
             </p>
-       
+            <section>
+            
+            </section>
         </main>
     </body>
 </html>
