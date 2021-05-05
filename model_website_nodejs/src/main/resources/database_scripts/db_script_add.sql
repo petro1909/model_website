@@ -1,0 +1,23 @@
+insert into Models values
+(	2,
+	'Victoriya2',
+    'Secret2',
+    'vict@mail.ru',
+    '+37521343324',
+    'USA',
+    'New York'
+),
+(3,
+	'Victoriya3',
+    'Secret3',
+    'vict@mail.ru',
+    '+37521343324',
+    'USA',
+    'New York'),
+  (4,
+	'Victoriya4',
+    'Secret4',
+    'vict@mail.ru',
+    '+37521343324',
+    'USA',
+    'New York');
